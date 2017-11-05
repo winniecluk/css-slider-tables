@@ -28,7 +28,7 @@ div.slides {
   width: 404vw;
 /*  border: 1px solid red;*/
   position: fixed;
-  height: 50vh;
+  height: 94vh;
   overflow: scroll;
   -webkit-transition: left 2s;
   transition: left 2s;

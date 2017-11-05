@@ -3,7 +3,7 @@ window.onload = function(){
   var numberOfTables = 4;
   const offsetVal = 100;
   var currentIdx = 0;
-  const maxIdx = 0 + (numberOfTables - 1);
+  const maxIdx = numberOfTables - 1;
   var mainSlide = document.querySelector('div.slides');
   function getPos(idx){
      return '-' + (offsetVal * idx).toString() + 'vw';
