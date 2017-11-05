@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+}
+
+div#caption {
+  text-align: center;
+  border: 1px solid black;
+  display: block;
+  height: 20px;
+  background-color: white;
+  padding: 10px 0;
+}
+
+.fixed {
+    position: fixed;
+}
+
+table {
+  table-layout: fixed;
+  width: 100vw;
+  border-collapse: collapse;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+}
+
+div.slides {
+  width: 404vw;
+/*  border: 1px solid red;*/
+  position: fixed;
+  height: 50vh;
+  overflow: scroll;
+  -webkit-transition: left 2s;
+  transition: left 2s;
+}
+
+div.screen {
+  width: 100vw;
+  height: 20vh;
+  border: blue;
+  position: relative;
+}
+
+table tr td{
+/*  border: 1px solid black; */
+  padding: 4px;
+}
+
+div.direction {
+  position: absolute;
+  z-index: 999;
+  background-color: white;
+  opacity: 0.4;
+}
+
+div.direction:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+div.arrow-left {
+  left: 20px;
+}
+
+div.arrow-right {
+  right: 20px;
+}
+
+.half-width {
+  width: 50vw;
+}
+
+table tr:nth-child(2n+1) td:nth-child(2n+1){
+  background-color: rgb(213,241,196);
+}
+
+table tr:nth-child(2n) td:nth-child(2n){
+  background-color: rgb(213,241,196);
+}
+
+@media (max-width:500px){
+  table tr td {
+    display: block;
+    width: 98vw;
+  }
+
+  table tr td:nth-child(2n+1){
+    background-color: rgb(213,241,196);
+  }
+
+  table tr td:nth-child(2n){
+    background-color: white !important;
+  }
+}
