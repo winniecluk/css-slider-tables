@@ -34,13 +34,6 @@ div.slides {
   transition: left 2s;
 }
 
-div.screen {
-  width: 100vw;
-  height: 20vh;
-  border: blue;
-  position: relative;
-}
-
 table tr td{
 /*  border: 1px solid black; */
   padding: 4px;
